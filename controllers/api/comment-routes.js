@@ -18,6 +18,7 @@ Comment.findAll({
 });
 
 router.post('/', (req, res) => {
+    console.log(req)
     // check the session
     if (req.session) {
       Comment.create({
